@@ -24,7 +24,8 @@ body {
     color: #d9dcd6;
 }
 
-.header div {
+/* changed div to nav */
+.header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -33,7 +34,8 @@ body {
 }
 
 /* combined .header div ul with .header div ul li */
-.header div ul li {
+/* changed div to nav */
+.header nav ul li {
     list-style-type: none;
     display: inline-block;
     margin-left: 25px;
