@@ -32,11 +32,9 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
-    list-style-type: none;
-}
-
+/* combined .header div ul with .header div ul li */
 .header div ul li {
+    list-style-type: none;
     display: inline-block;
     margin-left: 25px;
 }
