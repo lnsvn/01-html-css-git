@@ -1,215 +1,162 @@
+/* This page has been reorganized to follow the order of the semantic HTML elements and combine class selectors with the same properties */
+
+/* Applies to all */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    box-sizing: border-box; /* padding and border are included in the width and height */
+    padding: 0; /* adds no space between the inner (content) box and the outer (border) box */
+    margin: 0; /* signifies no margins unless specified otherwise below */
 }
+
+/* Beginning of <body> */
 
 body {
-    background-color: #d9dcd6;
+    background-color: #d9dcd6; /* sets the body background color of the body */
 }
 
+/* Beginning of <header> */
 .header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+    padding: 20px; /* applies 20px of padding to header */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* sets the text font of the header */
+    background-color: #2a607c; /* sets the background color of the header */
+    color: #ffffff; /* sets the text color in the header */
 }
 
 .header h1 {
-    display: inline-block;
-    font-size: 48px;
+    display: inline-block; /* sets the <h1> element to be displayed horizontally */
+    font-size: 48px; /* sets the font size of <h1> */
 }
 
 .header h1 .seo {
-    color: #d9dcd6;
+    color: #d9dcd6; /* applies a sperate text color to the 'seo' section of <h1> */
 }
 
-/* changed div to nav */
+/* changed <div> to <nav> to keep inline with the HTML sheet */
 .header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    padding-top: 15px; /* applies 15px of padding to the top of <nav> */
+    margin-right: 20px; /* sets the margin area to the right side of <nav> */
+    float: right; /* places <nav> to the right side of the container */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* changes the text font of <nav> in the header */
+    font-size: 20px; /*changes font size of <nav> in the header */
 }
 
 /* combined .header div ul with .header div ul li */
-/* changed div to nav */
+/* changed <div> to <nav> */
 .header nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    margin-left: 25px;
+    list-style-type: none; /* specifies the style of the list item marker to none */
+    display: inline-block; /* sets the <li> element to be displayed horizontally */
+    margin-left: 25px; /* sets the margin area to the left side of <li> */
 }
 
 a {
-    color: #ffffff;
-    text-decoration: none;
+    color: #ffffff; /* sets the text color of <a> */
+    text-decoration: none; /* removes the unlerline from the text in <a> */
 }
+/* End of <header> */
 
+/* <img> */
 .hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+    height: 800px; /* sets the back-ground image height */
+    width: 100%; /* sets the background image width */
+    margin-bottom: 25px; /* sets the margin area below the background image */
+    background-image: url("../images/digital-marketing-meeting.jpg"); /* specifies the image to use in the background of the element */
+    background-size: cover; /* the image is rendered at the largest size covering the background positioning area */
+    background-position: center; /* sets the initial position of the background image to center */
 }
+/* <img> */
 
-/* moved from below .float-right to below .hero */
+/* Beginning of <main> */
 .content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+    width: 75%; /* specifies the width of the content area */
+    display: inline-block; /* sets the content to be displayed horizontally */
+    margin-left: 20px; /* sets the margin area to the left of the content */
 }
 
-/* moved from lower page to below .content */
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+.search-engine-optimization, 
+.online-reputation-management,
+.social-media-marketing {
+    margin-bottom: 20px; /* sets the margin below this section */
+    padding: 50px; /* applies padding to the section */
+    height: 300px; /* sets the section's height */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* sets the text font of the section */
+    background-color: #0072bb; /* sets the background color of the section */
+    color: #ffffff; /* sets the text color of the section */
 }
 
-/*moved below .search-engine-optimization and above .float-left */
-.search-engine-optimization img {
-    max-height: 200px;
+.search-engine-optimization img, 
+.online-reputation-management img, 
+.social-media-marketing img {
+    max-height: 200px; /* sets the maximum height of the image */
 }
 
 .float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-/* moved below .float-left */
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-/* moved from below a to below .search-engine-optomization h2 */
-p {
-    font-size: 16px;
-}
-
-/* moved from lower page to below p */
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-/* moved below .online-repuatation-management and above .float-right */
-.online-reputation-management img {
-    max-height: 200px;
+    float: left; /* places the image to the left side of the container */
+    margin-right: 25px; /* sets the margin to the right of the image */
 }
 
 .float-right {
-    float: right;
-    margin-left: 25px;
+    float: right; /* places the image to the right side of the container */
+    margin-left: 25px; /* sets the margin to the left of the image */
 }
 
-/* moved below .float-right */
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-/* moved from bottom of page to below .online-reputation-management */
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-/* moved below .social-media-marketing */
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-/* moved below .social-media-marketing-img */
+.search-engine-optimization h2, 
+.online-reputation-management h2, 
 .social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+    margin-bottom: 20px; /* sets the margin below this <h2> */
+    font-size: 36px; /* sets the font size of this <h2> */
 }
 
+p {
+    font-size: 16px; /* sets the font size of all <p> elements */
+}
+/* End of <main> */
+
+/* Beginning of <aside> */
 .benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    margin-right: 20px; /* sets the margin to the right of the <aside> */
+    padding: 20px; /* adds padding to the aside */
+    clear: both; /* floating elements are not allowed to float on both side */
+    float: right; /* the aside will float to the right of the container */
+    width: 20%; /* sets the width of the aside */
+    height: 100%; /* sets the height of the aside */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* sets the font style of the content in the aside */
+    background-color: #2589bd; /* sets the background color of the aside */
 }
 
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-/* moved below .benefit-lead */
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/* moved below .benefit-lead h3 */
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-/* moved below .benefit-brand */
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/* moved below .benefit-brand h3 */
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
+.benefit-lead,
+.benefit-brand,
 .benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
+    margin-bottom: 32px; /* sets the margin size below these sections */
+    color: #ffffff; /* sets the text color of the sections */
 }
 
+.benefit-lead h3, 
+.benefit-brand h3, 
 .benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
+    margin-bottom: 10px; /* sets the margin size below these h3s */
+    text-align: center; /* aligns the h3s text to the center*/
 }
 
+/* combined class selectors with same properties */
+.benefit-lead img, 
+.benefit-brand img, 
 .benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+    display: block; /* start images on new lines and take up available screen width */
+    margin: 10px auto; /* adds margin around images */
+    max-width: 150px; /*sets max width of images */
 }
+/* End of <aside> */
 
+/* Beginning of <footer> */
 .footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+    padding: 30px; /* adds padding to footer */
+    clear: both; /* floating elements are not allowed to float on both sides */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* sets the font style of the footer */
+    text-align: center; /* aligns footer to the center */
 }
 
 .footer h4 {
-    font-size: 20px;
+    font-size: 20px; /* sets font size of h4 */
 }
+/* End of <footer> */
+
+/* End of <body> */
