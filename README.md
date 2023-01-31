@@ -1,19 +1,10 @@
 # 01-html-css-git
-The Module 1 Challenge assignment on HTML, CSS, and Git.
-# <Your-Project-Title>
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+For this project, a marketing agency has "hired" me to refactor an existing site with the goal of making it more accessible. Accessibility ensures that people with disabilities can access a website using assistive technologies. Also, accessible sites are optimized for search engines meaning they will rank higher. I have learned that being as specific as possible with the semantic HTML elements, instead of using < div > for everything, as well as with the site title and the image alt attributes can help solve the accessibility issue. So can structuring both the HTML and CSS pages in a logical order making it easier to read. 
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents 
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -22,46 +13,32 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+N/A
 
 ## Usage
+This site contains information pertaining to online marketing. To view the main set of information, you can either scroll down on the page, or you can click the three header navigation links to take you directly to the information you need as pictured here: 
 
-Provide instructions and examples for use. Include screenshots as needed.
+Navigation Links
+![alt text](./assets/images/header-nav.png)
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+Information
+![alt text](./assets/images/body-info.png)
 
-![alt text](assets/images/screenshot.png)
+There is also a sidebar with useful tips found next so the main section of information. You can get here by scrolling down on the page. 
+
+Sidebar Tips
+![alt text](./assets/images/sidebar.png)
+
+The finished site image:
+![alt text](./assets/images/full-site.png)
+
+The finished site link:
+
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+N/A
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-
-Badges aren't necessary, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+MIT License
