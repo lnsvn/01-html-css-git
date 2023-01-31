@@ -33,7 +33,7 @@ The finished site image:
 ![alt text](./assets/images/full-site.png)
 
 The finished site link:
-
+https://lnsvn.github.io/01-html-css-git/
 
 ## Credits
 
